@@ -1,50 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="author" content="GG">
-    <meta name="description" content="This is a random Password Generator Free">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robotos" content="index,follow">
-    <title>Generate a New Password</title>
-    <link rel="stylesheet" href="stylelight.css">
-    <link rel="stylesheet" type="text/css" href="style.css" id="stylesheet">
-    <link rel="shortcut icon" href="./img/change-password-icon.png" type="image/x-icon">
-</head>
-<body>
-    <main class="container">
-        <div class="Generator-box">
-            <button id="toggle-dark-mode" class="darkMode"><abbr title="Change to Dark Mode">:)</abbr></button>
-            <h2 class="Generator-title"><span class="white-title">Generate a</span> <br> <span class="green-title">random password</span></h2>
-            <p class="subtext">Never use an insecure password again.</p>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="GG">
+        <meta name="description" content="This is a random Password Generator Free">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="robotos" content="index,follow">
+        <title>Generate a New Password</title>
+        <!-- Links -->
+        <link rel="stylesheet" href="stylelight.css">
+        <link rel="stylesheet" type="text/css" href="style.css" id="stylesheet">
+        <link rel="shortcut icon" href="./img/change-password-icon.png" type="image/x-icon">
+    </head>
 
-            <div class="btn-container">
-                <button class="btn-generator" onclick="randomPass()" >Generate passwords</button>
-                <input  type="number" id="passwordLength-el"  class="btn-input" type="text" title="Add the Password Length"> 
-                <div class="btn-checkboxes">
-                    <input type="checkbox" id="include-symbols-el">&nbsp;(Symbols) <br>
-                    <input type="checkbox" id="include-numbers-el">&nbsp;(Numbers) 
+    <body>
+        <!-- Main Container -->
+        <main class="container">
+            <div class="Generator-box">
+                <button id="toggle-dark-mode" class="darkMode"><abbr title="Change to Dark Mode">:)</abbr></button>
+                <h2 class="Generator-title"><span class="white-title">Generate a</span> <br> <span class="green-title">random password</span></h2>
+                <p class="subtext">Never use an insecure password again.</p>
+
+                <div class="btn-container">
+                    <button class="btn-generator" onclick="randomPass()" >Generate passwords</button>
+                    <input  type="number" id="passwordLength-el"  class="btn-input" type="text" title="Add the Password Length"> 
+                    <div class="btn-checkboxes">
+                        <input type="checkbox" id="include-symbols-el">&nbsp;(Symbols) <br>
+                        <input type="checkbox" id="include-numbers-el">&nbsp;(Numbers) 
+                    </div>
+                </div>
+
+                <div class="line"></div>
+        
+                <div class="container-password-output">
+                    <div id="outputOne-el" class="password-output boxOne"></div>
+                    <div id="outputTwo-el" class="password-output boxTwo"></div>
+                </div>
+
+                <div class="btn-copy-container">
+                    <button id="BtncopyOne-el"  class="btn-copy btnOne"><abbr title="Doble Click to Copy">COPY</abbr></button>
+                    <button id="BtncopyTwo-el"  class="btn-copy btnTwo"><abbr title="Doble Click to Copy">COPY</abbr></button>
                 </div>
             </div>
+        </main>
 
-            <div class="line"></div>
-       
-            <div class="container-password-output">
-                <div id="outputOne-el" class="password-output boxOne"></div>
-                <div id="outputTwo-el" class="password-output boxTwo"></div>
-            </div>
-
-            <div class="btn-copy-container">
-                <button id="BtncopyOne-el"  class="btn-copy btnOne"><abbr title="Doble Click to Copy">COPY</abbr></button>
-                <button id="BtncopyTwo-el"  class="btn-copy btnTwo"><abbr title="Doble Click to Copy">COPY</abbr></button>
-            </div>
-        </div>
-
-    
-    </main>
-
-    <script src="/test.js"></script>
-    <!-- <script src="generator.js"></script> -->
-</body>
+        <script src="/test.js"></script>
+    </body>
 </html>

@@ -1,3 +1,4 @@
+// App Name: Password Generator
 
 const characters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z","a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
 const symbols = ["!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "_", "+", "=", "-", "."];
@@ -54,13 +55,7 @@ document.getElementById("include-numbers-el").addEventListener("change", randomP
 
 
 
-  
-
-
-
-
 // On Clicks
-
 
 
 function copyOutputOne() {
@@ -94,12 +89,6 @@ function copyOutputOne() {
   btnCopyTwoEl.addEventListener("click", copyOutputTwo);
 
 
-
-
-// On Clicks
-
-
-
 // Dark Mode
 
 const darkModeButton = document.getElementById("toggle-dark-mode");
@@ -114,7 +103,7 @@ darkModeButton.addEventListener("click", function() {
   }
 });
 
-// Dark Mode
+
 
 
 
